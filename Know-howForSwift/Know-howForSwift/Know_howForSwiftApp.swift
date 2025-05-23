@@ -28,7 +28,7 @@ struct Know_howForSwiftApp: App {
 
                     Section(header: Text("Other")) {
                         NavigationLink("WebAPI") {
-                            ContentView()
+                            WeatherView()
                         }
                     }
                 }
