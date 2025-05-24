@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct WeatherDetailView: View {
-
+    
     var detail: WeatherResponse.Description
     var body: some View {
-        ZStack {
+        VStack {
+            Text(detail.bodyText)
+            Spacer()
+        }
+        .zStack {
             LinearGradient(gradient:
                             Gradient(colors: [Color.blue.opacity(0.6), Color.purple.opacity(0.6)]), startPoint: .topLeading,
                            endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text(detail.bodyText)
-                Spacer()
-            }
-
+        } front: {
         }
     }
 }
