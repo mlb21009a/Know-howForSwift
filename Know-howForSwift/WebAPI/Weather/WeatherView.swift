@@ -57,6 +57,9 @@ struct WeatherView: View {
                 ProgressView()
             }
         }
+        .backTheme{
+            Image("Background")
+        }
         .task {
             do {
                 response = try await WeatherRequest().request()
