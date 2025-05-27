@@ -22,7 +22,10 @@ struct Know_howForSwiftApp: App {
 
                     Section(header: Text("UIKit")) {
                         NavigationLink("CollectionView") {
-                            ContentView()
+                            CollectionView()
+                                .tapCell {
+                                    print("aaa")
+                                }
                         }
                     }
 
