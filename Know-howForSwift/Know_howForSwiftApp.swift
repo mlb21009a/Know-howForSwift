@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Know_howForSwiftApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             NavigationStack {
@@ -41,4 +43,12 @@ struct Know_howForSwiftApp: App {
 
         }
     }
+}
+
+import UIKit
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        return true
+    }
+    // 必要に応じて処理を追加
 }
