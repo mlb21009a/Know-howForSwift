@@ -71,6 +71,8 @@ struct WeatherView: View {
                         print((error as? URLError)?.code)
                     case .unknown:
                         break
+                    case .timeout:
+                        break
                     }
                 }
 

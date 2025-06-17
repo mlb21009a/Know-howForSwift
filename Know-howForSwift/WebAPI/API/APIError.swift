@@ -7,6 +7,7 @@
 
 enum APIError: Error {
     case status(Int)
+    case timeout
     case other(Error)
     case unknown
 }
