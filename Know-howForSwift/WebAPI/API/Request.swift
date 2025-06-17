@@ -41,7 +41,7 @@ extension Request {
         } catch {
             if let error = error as NSError? {
                 if error.domain == NSURLErrorDomain, error.code == NSURLErrorTimedOut {
-                    throw APIError .timeout
+                    throw APIError.timeout
                 }
             }
             throw APIError.other(error)
